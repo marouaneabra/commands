@@ -17,3 +17,31 @@ Delete the tar file after a succesful download
 ```
 rm <tar file>
 ```
+
+### Forking yor own repo
+
+Clone the new repo where the fork is going to happen
+
+Add the repo to be forked as an Upstream Remote inside the new repo using
+
+```
+git remote add upstream <repo github link>
+```
+
+Pull the changes to the new repo
+
+```
+git pull upstream master
+```
+
+then
+
+```
+git push origin master
+```
+
+Note: if fatal error stating that merge of unrelated histories occurs, use
+
+```
+--allow-unrelated-histories
+```
