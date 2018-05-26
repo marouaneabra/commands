@@ -18,7 +18,7 @@ Delete the tar file after a succesful download
 rm <tar file>
 ```
 
-### Forking yor own repo
+### Forking your own repo
 
 Clone the new repo where the fork is going to happen
 
@@ -45,3 +45,37 @@ Note: if fatal error stating that merge of unrelated histories occurs, use
 ```
 --allow-unrelated-histories
 ```
+
+### Branching using git
+
+Create branch
+
+```
+git checkout -b BRANCH
+```
+
+Switch branch
+
+```
+git checkout BRANCH
+```
+
+Switch to master branch
+
+```
+git checkout origin master
+```
+
+Get changes
+
+```
+git pull origin master
+```
+
+Push changes
+
+```
+git push origin BRANCH
+```
+
+Then manually submit a pull request to repo on Github
